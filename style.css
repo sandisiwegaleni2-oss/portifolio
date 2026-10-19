@@ -1,0 +1,363 @@
+/* ============================================
+   style.css — Sandisiwe Galeni Portfolio
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amasis MT Pro Medium', Roboto, system-ui, sans-serif;
+    background: #fcf8fb;
+    color: #0b1b2b;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 16px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+    color: hsl(305, 61%, 15%);
+}
+
+.logo span {
+    color: #8f2b71;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #1e3a4f;
+}
+
+.nav-links a:hover {
+    color: #2b6c8f;
+    transition: 0.2s;
+}
+
+/* ========== HERO ========== */
+.hero {
+    padding: 60px 0 40px;
+    background: linear-gradient(135deg, #e7f0f8 0%, #ffffff 100%);
+    border-radius: 0 0 40px 40px;
+    margin-bottom: 20px;
+}
+
+.hero-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1 1 300px;
+}
+
+.hero-content .badge {
+    display: inline-block;
+    background: #d4e6f1;
+    color: #661b5a;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0b1b2b;
+    margin-bottom: 16px;
+}
+
+.hero-content h1 i {
+    color: #2b6c8f;
+    font-size: 2.2rem;
+    margin-left: 8px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #2a4052;
+    max-width: 580px;
+    margin-bottom: 24px;
+}
+
+.hero-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 28px;
+    font-size: 0.95rem;
+    color: #234a61;
+    background: white;
+    padding: 18px 24px;
+    border-radius: 28px;
+    box-shadow: 0 8px 25px -10px rgba(0, 0, 0, 0.08);
+    margin-top: 8px;
+}
+
+.hero-details i {
+    width: 22px;
+    color: #2b6c8f;
+}
+
+/* ========== PROFILE IMAGE / AVATAR ========== */
+.hero-avatar {
+    flex: 0 0 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-circle {
+    width: 230px;
+    height: 310px;
+    position: relative;
+    background: linear-gradient(145deg, #c9ddee, #ffffff);
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #1f5a7a;
+    box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.1);
+    border: 4px solid white;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+
+.avatar-initials {
+    position: relative;
+}
+
+/* ========== SECTIONS ========== */
+section {
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #0b1b2b;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-title i {
+    color: #2b6c8f;
+    font-size: 1.8rem;
+}
+
+/* ========== CARDS ========== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+}
+
+.card {
+    background: white;
+    padding: 26px 24px;
+    border-radius: 28px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.02);
+    border: 1px solid #e2edf5;
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #b8d4e8;
+    box-shadow: 0 16px 30px -8px rgba(43, 108, 143, 0.12);
+}
+
+.card i {
+    font-size: 1.8rem;
+    color: #2b6c8f;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.card p, .card li {
+    color: #2d4b61;
+    font-size: 0.97rem;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 6px;
+}
+
+/* ========== TAGS ========== */
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.tag {
+    background: #e3eff9;
+    color: #1f5a7a;
+    padding: 6px 15px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* ========== PROJECT ITEMS ========== */
+.project-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-item h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-item h4 i {
+    font-size: 1rem;
+    color: #2b6c8f;
+    margin-bottom: 0;
+}
+
+.project-item p {
+    font-size: 0.92rem;
+    color: #335a72;
+}
+
+/* ========== REFERENCES ========== */
+.ref-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+.ref-item strong {
+    font-size: 1rem;
+    color: #0b1b2b;
+}
+
+.ref-item span {
+    font-size: 0.95rem;
+    color: #2d4b61;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ref-item i {
+    font-size: 0.9rem;
+    color: #2b6c8f;
+    width: 18px;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    text-align: center;
+    padding: 32px 0 40px;
+    border-top: 1px solid #cde0ec;
+    margin-top: 30px;
+    color: #4b6d83;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin: 16px 0 10px;
+    font-size: 1.4rem;
+    color: #2b6c8f;
+}
+
+.social-links a:hover {
+    color: #0f2b3d;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 680px) {
+    .hero-content h1 {
+        font-size: 2.1rem;
+    }
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .hero-avatar {
+        flex-basis: 100%;
+    }
+    .avatar-circle {
+        width: 170px;
+        height: 230px;
+        font-size: 3.8rem;
+    }
+}
